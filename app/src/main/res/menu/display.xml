@@ -5,6 +5,6 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
-        lioncorps.collectionbdmanager:showAsAction="always"
+        lioncorps.collectionbdmanager:showAsAction="collapseActionView"
         android:title="@string/action_settings" />
 </menu>

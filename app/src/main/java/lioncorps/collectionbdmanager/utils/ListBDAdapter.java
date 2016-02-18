@@ -66,7 +66,7 @@ public class ListBDAdapter extends BaseAdapter {
         ((TextView) view.findViewById(R.id.bd_id)).setText(String.valueOf(item.getBdid()));
         ((TextView) view.findViewById(R.id.serie_id)).setText(String.valueOf(item.getSerieId()));
         ((TextView) view.findViewById(R.id.editeur)).setText(item.getEditeur());
-        view.findViewById(R.id.button).setOnClickListener(new MyOnClickListener(displayActivity,collection,view));
+        view.findViewById(R.id.button).setOnClickListener(new MyOnClickListener(ListBDAdapter.this,displayActivity,collection,view,listItems,index));
 
         imageview.setImageBitmap(null);
         if (!TextUtils.isEmpty(item.getUrlImage())) {
