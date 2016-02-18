@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">CollectionBDManager</string>
     <string name="url">http://lioncorps.free.fr/listing</string>
+    <string name="action_settings">Version</string>
 </resources>

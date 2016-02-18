@@ -48,4 +48,18 @@ public class Collection {
             return "[]";
         }
     }
+
+    public void setBDFromSerieAsPossede(Long serieId, Long BDId){
+        for(Serie serie : listeSerie){
+            if (serie.getId().equals(serieId)){
+                for(Bd bd : serie.getListManquante()){
+                    if (bd.getId().equals(BDId)){
+                        serie.getListPossede().add(bd);
+                        serie.getListManquante().remove(bd);
+                        break;
+                    }
+                }
+            }
+        }
+    }
 }

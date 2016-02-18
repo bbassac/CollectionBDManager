@@ -4,6 +4,7 @@ package lioncorps.collectionbdmanager.bean;
 import org.codehaus.jackson.annotate.JsonAnyGetter;
 import org.codehaus.jackson.annotate.JsonAnySetter;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,6 +25,8 @@ public class Serie {
         this.nom = nom;
         this.id = id;
         this.fini = fini;
+        listManquante = new ArrayList<>();
+        listPossede = new ArrayList<>();
     }
 
 
